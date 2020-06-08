@@ -12,25 +12,7 @@ public class mostOccuringDigit {
         }
         String str = sb.toString();
         System.out.println(str);
-
-        char[] char_arr=str.toCharArray();
-//        int len=char_arr.length;
-//        int count=0;
-//        for(int i=0;i<len;i++){
-//            if(char_arr[i]!=' ') {
-//                count = 0;
-//                for (int j = i + 1; j < len; j++) {
-//                    if (char_arr[i] == char_arr[j]) {
-//                        count++;
-//                        char_arr[j] =' ';
-//                    }
-//
-//                }
-//
-//
-//                System.out.println(char_arr[i] + " " + ++count);
-//            }
-//        }
+        
         int temp=1;
         HashSet<Integer> arr1=new HashSet<>();
         for(int i=0;i<str.length();i++){
@@ -44,7 +26,6 @@ public class mostOccuringDigit {
 
             }
         }
-        //System.out.println(arr1);
         System.out.println(Collections.max(arr1));
         return 0;
     }
